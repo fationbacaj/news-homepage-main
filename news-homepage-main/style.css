@@ -1,0 +1,1356 @@
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root{
+    /* Primary */
+
+--Soft-orange: hsl(35, 77%, 62%);
+--Soft-red: hsl(5, 85%, 63%);
+
+/* Neutral */
+
+--Off-white: hsl(36, 100%, 99%);
+--Grayish-blue: hsl(233, 8%, 79%);
+--Dark-grayish-blue: hsl(236, 13%, 42%);
+--Very-dark-blue: hsl(240, 100%, 5%);
+--font:'Inter';
+}
+
+*{
+    margin:0;padding: 0;box-sizing: border-box;
+}
+
+body{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: var(--font)!important;
+ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 10px);
+    align-items: center;
+    align-content: center;
+ 
+    box-sizing: border-box;
+
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: white;
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+    left:0;
+    top:0;
+}
+.logo img{
+    
+        width: 70%;
+        height: 70%;
+        left: 15%;
+        top: 15%;
+        position: relative;
+    
+}
+.close{display: none;}
+
+.menu-icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 25px;
+    right: 25px;
+    display: none;
+}
+
+ul.nav-ul-links {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+li.nav-ul-li {
+    position: relative;
+    float: right;
+    display: block;
+    right: -25rem;
+    width: 10vw;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+
+}
+
+/* section article in side here and news */
+    
+.article{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height:100vh;
+    top:100px;
+    left:0px
+ 
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:66%;
+    height: 100%;
+
+}
+
+  .div-hero-img{
+    display:flex;
+
+   width: 100%;
+   height:60%;
+   object-fit: cover;
+  }
+.div-hero-img img{
+    width: 100%;
+    height: 100%;
+}
+  .hero-description{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+  }
+
+  .hero-description h1{
+    position: absolute;
+    font-size: 36px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    font-family: "Inter", sans-serif; 
+    background-color: var(--Off-white);
+    
+  }
+  .hero-p{
+    position: absolute;
+    display: flex;
+    align-self: center;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 20px;
+    background-color: var(--Off-white);
+    padding: 20px;
+  }
+.news{
+    position: absolute;
+    display: flex;
+    width: 33%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    right: 0px;
+    top: 0px;
+    background: var(--Very-dark-blue);
+    padding: 20px;
+}
+.news1, .news2,.news3 {
+    display: flex;
+    flex-direction: column;
+    color: var(--Off-white);
+    font-size: 15px;
+    width: 100%;
+    height: 30%;
+    border-top: 1px solid lavender;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 700;
+    height: 10%;
+    width: 100%;
+    color: var(--Soft-orange);
+}
+li.nav-ul-li:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
+    transition: 0.6 s ease-in;
+}
+
+.btn{
+    position: absolute;
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    left: 1rem;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--Soft-red);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: var(--Off-white);
+    cursor: pointer;
+    transition: 0.6 s ease-in;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+.btn:hover{
+    background-color: var(--Very-dark-blue);
+    color: var(--Off-white);
+    font-size: 15px;
+
+}
+h2, h3{cursor: pointer;}
+h2:hover, h3:hover{color: var(--Soft-orange);cursor: pointer;}
+/* cards */
+.cards{
+    position: absolute;
+    top: 115vh;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    padding: 20px;
+    background-color: var(--Off-white);
+
+}
+
+
+.card{
+    
+    display: flex;
+    flex-direction:column;
+    align-items:stretch;
+    width: 40%;
+    height: 100%;
+    align-self: start;
+    position: relative;
+}
+
+.left {
+      position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 30%;
+    padding: 10px;
+}
+
+.left img {
+    position: absolute;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-clip: content-box;
+    padding: 0px;
+}
+
+.h2-gri{
+    display: flex;
+    align-content: center;
+    color: var(--Grayish-blue);
+    font-size: 22px;
+}
+
+.pershkrim {
+    display: flex;
+    flex-direction: column;
+    width: 59%;
+    height: 100%;
+    position: relative;
+    right: -8.5rem;
+    top: 1.3rem;
+}
+
+@media screen and (max-width: 1336px)  and (max-height: 1366px) {
+    body{
+
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-family: Inter;
+         
+    }
+    
+    .main{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    
+    }
+   
+    .article{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        height: 55vh;
+        top:100px;
+        left:0px
+     
+        
+    }
+    .hero-description h1 {
+        
+        padding: 10px;
+    font-size: 32px;
+        
+    }
+    .pershkrim {
+    
+        right: -8rem;
+      
+    }
+
+    .btn{
+        left: 1rem;
+        position: absolute;
+        top: 7rem;
+    }
+
+  
+    li.nav-ul-li {
+        left: 25rem;
+    }
+    .news1, .news2, .news3 {
+       
+        font-size: 15px;
+     
+        border-top: 1px solid lavender;
+       
+    }
+    .cards {
+        position: absolute;
+        top: 75vh;
+        display: flex;
+        flex-direction: row;
+        height: 30vh;
+        padding: 20px;
+        background-color: var(--Off-white);
+    }
+}
+
+
+@media screen and (max-width: 1024px)  and (max-height: 1366px){
+    body{
+
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-family: Inter;
+    
+    }
+    
+    .main{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    
+    }
+    .cards {
+        position: absolute;
+        top: 76vh;
+        display: flex;
+        flex-direction: row;
+        height: 30vh;
+        padding: 20px;
+        background-color: var(--Off-white);
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+        align-self: start;
+        position: relative;
+    }
+    .pershkrim {
+        right: -8rem;
+        top: 0;
+    }
+    .hero-description h1 {
+    
+        padding: 10px;
+      
+    }
+
+    .left {
+      
+         
+        height: 100%;
+        width: 40%;
+        padding: 2px;
+    }
+    li.nav-ul-li {
+     
+       left: 21rem;
+      
+    }
+    .btn {
+        left: 1rem;
+    position: absolute;
+    }
+    h2 {
+        font-size: 19px;
+    }
+}
+
+/* Portrait */
+@media screen 
+  and (min-width: 800px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    @font-face {
+        font-family: Inter;
+        src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+    :root{
+        /* Primary */
+    
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    
+    /* Neutral */
+    
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --font:'Inter';
+    }
+    
+    *{
+        margin:0;padding: 0;box-sizing: border-box;
+    }
+    
+    body{
+    
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-family: var(--font)!important;
+     
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        left: 50%;
+        top: 0%;
+        transform: translate(-50%, 10px);
+        align-items: center;
+        align-content: center;
+     
+        box-sizing: border-box;
+    
+    }
+    
+    nav{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: white;
+    
+    }
+    
+    .logo{
+        display: flex;
+        flex-direction: row;
+        width: 100px;
+        height: 100px;
+        left:0;
+        top:0;
+    }
+    .logo img{
+        
+            width: 70%;
+            height: 70%;
+            left: 15%;
+            top: 15%;
+            position: relative;
+        
+    }
+    .close{display: none;}
+    
+    .menu-icon{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 25px;
+        right: 25px;
+        display: none;
+    }
+    
+    ul.nav-ul-links {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+        left: 0;
+    }
+    li.nav-ul-li {
+        position: relative;
+        float: right;
+        display: block;
+        right: -25rem;
+        width: 10vw;
+        height: 100%;
+        line-height: 100px;
+        text-align: center;
+    
+    }
+    
+    /* section article in side here and news */
+        
+    .article{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        height:50vh;
+        top:100px;
+        left:0px
+     
+        
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:66%;
+        height: 100%;
+    
+    }
+    
+      .div-hero-img{
+        display:flex;
+    
+       width: 100%;
+       height:60%;
+       object-fit: cover;
+      }
+    .div-hero-img img{
+        width: 100%;
+        height: 100%;
+    }
+      .hero-description{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60%;
+      }
+    
+      .hero-description h1{
+        position: absolute;
+        font-size: 36px;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-self: center;
+        font-family: "Inter", sans-serif; 
+        background-color: var(--Off-white);
+        
+      }
+      .hero-p{
+        position: absolute;
+        display: flex;
+        align-self: center;
+        font-family: "Inter", sans-serif;
+        font-size: 15px;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        right: 20px;
+        background-color: var(--Off-white);
+        padding: 20px;
+      }
+    .news{
+        position: absolute;
+        display: flex;
+        width: 33%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        right: 0px;
+        top: 0px;
+        background: var(--Very-dark-blue);
+        padding: 20px;
+    }
+    .news1, .news2,.news3 {
+        display: flex;
+        flex-direction: column;
+        color: var(--Off-white);
+        font-size: 15px;
+        width: 100%;
+        height: 30%;
+        border-bottom: 1px solid lavender;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter';
+        font-size: 36px;
+        font-weight: 700;
+        height: 10%;
+        width: 100%;
+        color: var(--Soft-orange);
+    }
+    li.nav-ul-li:hover {
+        color: var(--Soft-orange);
+        cursor: pointer;
+        transition: 0.6 s ease-in;
+    }
+    
+    .btn{
+        position: absolute;
+        top: 10rem;
+        display: flex;
+        flex-direction: column;
+        left: 1rem;
+        width: 250px;
+        height: 50px;
+        line-height: 50px;
+        background-color: var(--Soft-red);
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        color: var(--Off-white);
+        cursor: pointer;
+        transition: 0.6 s ease-in;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+    }
+    
+    
+    .btn:hover{
+        background-color: var(--Very-dark-blue);
+        color: var(--Off-white);
+        font-size: 15px;
+    
+    }
+    h2, h3{cursor: pointer;}
+    h2:hover, h3:hover{color: var(--Soft-orange);cursor: pointer;}
+    /* cards */
+    .cards{
+        position: absolute;
+        top: 110vh;
+        display: flex;
+        flex-direction: row;
+        height: 30vh;
+        padding: 20px;
+        background-color: var(--Off-white);
+    
+    }
+    
+    
+    .card{
+        
+        display: flex;
+        flex-direction:column;
+        align-items:stretch;
+        width: 40%;
+        height: 100%;
+        align-self: start;
+        position: relative;
+    }
+    
+    .left {
+          position: absolute;
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+        width: 30%;
+        padding: 10px;
+    }
+    
+    .left img {
+        position: absolute;
+        flex-direction: row;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-clip: content-box;
+        padding: 0px;
+    }
+    
+    .h2-gri{
+        display: flex;
+        align-content: center;
+        color: var(--Grayish-blue);
+        font-size: 22px;
+    }
+    
+    .pershkrim {
+        display: flex;
+        flex-direction: column;
+        width: 59%;
+        height: 100%;
+        position: relative;
+        right: -8.5rem;
+        top: 1.3rem;
+    }
+    p {
+        font-size: 17px;
+        font-family: 'Inter';
+    }
+
+    .cards {
+        position: absolute;
+        top: 65vh!important;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        height: 14vh!important;
+        width: 100%;
+        padding: 0px;
+        background-color: var(--Off-white);
+    }
+    
+}
+@media screen and (max-width: 900px)  and (max-height: 1366px){
+    body{
+
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-family: Inter; 
+    }
+    
+    .main{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    
+    }
+    .hero-description h1 {
+    
+        padding: 10px;
+        font-size: 2rem;
+      
+    }
+    
+      
+        .left {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            height: 88%;
+            width: 44%;
+            padding: 10px;
+        }
+    
+ .pershkrim {
+        right: -8rem;
+        top: 0rem;
+    }
+    .btn {
+        left: 1rem;
+        position: absolute;
+    }
+    .cards{position: absolute;
+        top: 70vh;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        height: 25vh;
+        width: 100%;
+        padding: 0px;
+        background-color: var(--Off-white);
+    }
+    li.nav-ul-li {
+     
+        left: 19rem;
+      
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+    .news p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        word-break: break-word;
+    }
+  
+}
+
+@media screen and (max-width: 780px)  and (max-height: 1366px){
+    .back{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top:0;
+        overflow: hidden;
+    }
+    body{
+
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-family: Inter; 
+        height: auto;
+    }
+    
+   .lock{
+    display: none
+   }
+   .back {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.519);
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+    .main{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        height: 170vh;
+        min-height: auto;
+        z-index: 1;
+        overflow: hidden;
+    
+    }
+
+    .cards{position: absolute;
+        top: 120vh;
+        display: flex;
+        flex-direction: row;
+        height: 25vh;
+        width: 100%;
+        padding: 20px;
+        background-color: var(--Off-white);
+    }
+
+    .card {
+        display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    align-self: baseline;
+    height: 100%;
+
+    }
+    .hero-description h1 {
+    
+        padding: 10px;
+    font-size: 1.6rem;
+    position: relative;
+    top: 0.4rem
+      
+    }
+    .left {   
+            display: flex;
+            flex-direction: row;
+            padding: 0%;
+            width: 30%;
+            height: 90%;
+        
+    }
+
+    .left img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .pershkrim {
+    
+        right: -11rem;
+    top: 32px;
+    font-size: 11px;
+    word-break: break-word;
+    }
+
+    .h2-gri {
+        display: flex;
+        align-content: center;
+        color: var(--Grayish-blue);
+        font-size: 26px;
+    }
+    .btn {
+        left: 1rem;
+    position: absolute;
+    width: 60%;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+    
+        
+    }
+    ul.nav-ul-links {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        width: 50vw;
+        height: 100vh;
+        left: 100vw;
+        top: 0;
+        position: absolute;
+        background-color: var(--Off-white);
+        z-index: 999999;
+
+    }
+    li.nav-ul-li {
+     
+        left: 0rem;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        color: var(--Very-dark-blue);
+        height: 80px;
+        width: 100%;
+        font-size: 15px;
+      
+    }
+    .menu-icon{
+        display: flex;
+        transition: 1s all ease-in;
+        cursor: pointer;
+    }
+    
+    .close {
+        display: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 99999;
+        cursor: pointer;
+    
+    }
+     
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .pershkrim {
+        display: flex;
+        left: 29vw;
+        top: 0vh;
+        position: absolute;
+    
+    }
+    .pershkrim p {
+        font-size: 15px;
+    }
+    .show {
+        width: 100%;
+        height: 100vh;
+        display: block;
+       
+    }
+
+    .news {
+       
+        padding: 10px;
+    }
+ 
+    .lock {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 999;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+
+    }
+
+    .news1, .news2, .news3 {
+     
+        font-size: 14px;
+      
+    }
+
+}
+
+@media screen and (max-width: 580px)  and (max-height: 1366px) {
+    .main {
+        
+        flex-direction: column;
+        width: 100%;
+        height: 300vh;
+        z-index: 1;
+        overflow-x: hidden;
+        background-color: var(--Off-white);
+    }
+    .hero-description h1 {
+        padding: 10px;
+        font-size: 2rem;
+        position: relative;
+        top: 0.4rem;
+        left: 1rem;
+        width: 100%;
+        height: 50%;
+    }
+    .article {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 180vh;
+        top: 100px;
+        left: 0px;
+    }
+
+    .hero-description {
+
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40vh;
+        top: 60vh;
+        left: 0;
+    
+    }
+    .div-hero-img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-p {
+        
+        flex-direction: column;
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        right: 0rem;
+       
+    }
+    .hero-p p {
+        height: 50%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .news {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        flex-direction: column;
+        align-items: flex-start;
+        right: 0px;
+        top: 120vh;
+        background: var(--Very-dark-blue);
+        padding: 20px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        padding: 5px;
+        position: absolute;
+        top: 210vh;
+    }
+    .hero-description h1 { 
+            padding: 10px;
+            font-size: 2.6rem;
+            position: relative;
+            top: 0.4rem;
+            left: 1rem;
+            width: 100%;
+            height: 50%;
+            font-family: var(--font);
+    }
+    .left {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        width: 30%;
+        height: 100%;
+    }
+    .pershkrim {
+         
+        left: 32vw;
+   
+    }
+    .card { 
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+    ul.nav-ul-links {
+        display: block;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        right:-10rem;
+
+    }
+    li.nav-ul-li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 2;
+        color: var(--Very-dark-blue);
+        height: 80px;
+        width: 100%;
+        left: 0;
+        font-size: 15px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .left {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        width: 40%;
+        height: 100%;
+    }
+
+    .pershkrim {
+        position: absolute;
+        left: 10rem;
+        height: calc(100% - 16px);
+        top: 0px;
+        width: 60%;
+        padding: 8px;
+        word-break: break-word;
+    }
+    .pershkrim p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 1rem;
+    }
+    h3 {
+        font-size: 20px;
+        font-weight: 900;
+        font-family: 'Inter';
+        margin-top: -1%;
+    }
+    .h2-gri {
+        font-size: 32px;
+        top: -0.8rem;
+        position: relative;
+    }
+    .news p {
+        cursor: pointer;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .news h2{
+       
+            font-size: 1.2rem;
+        
+    }
+    .news1, .news2, .news3 {
+        display: flex;
+        flex-direction: column;
+        color: var(--Off-white);
+        font-size: 15px;
+        width: 100%;
+        height: 30%;
+        border-top: 1px solid lavender;
+        border-bottom: none;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .left {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
+        width: 40%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .pershkrim {
+        position: absolute;
+        left: 40vw;
+        height: 100%;
+        width: 60%;
+        top: 0px;
+        word-break: break-word;
+    }
+    h3 {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: -0.5rem;
+    }
+    .hero-description h1 {
+        padding: 10px;
+        font-size: 2rem;
+        position: relative;
+        top: 0.4rem;
+        left: 1rem;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+
+@media screen and (max-width: 780px){
+    .back {
+        display: contents;
+    }
+}
+
+
+@media screen and (min-width: 781px){
+    .menu-icon{
+        display: none!important;
+    }
+}
+
+
+
