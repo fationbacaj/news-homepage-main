@@ -23,7 +23,7 @@ buttonMbyll.addEventListener("click", (ev)=>{
     buttonMbyll.style.display ="none";
     spine.style.display = "contents";
     buttonMenu.style.display ="block";
-    ul.style.left ="5vw";
+    ul.style.left ="100vw";
     ul.style.transition ="1s all ease-in";
     spine.classList.remove("show");
 })
